@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>never hack youtube</title>
+    <style>
+        #videoContainer {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            background: black;
+        }
+        #zekePlayer {
+            width: 100%;
+        }
+        #controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        button {
+            margin: 0 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
+    <div id="videoContainer">
+        <video id="zekePlayer">
+            <source src="videos/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  <h1>never hack discord</h1>
+  <h1>author:zeke-owner</h1>
+  <p>=======================================================
+subscribe
+=======================================================
+never hack discord, this video is fake
+=======================================================
+#discord #hack 
+=======================================================
+
+</p>
+
+    <div id="controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="muteBtn">Mute</button>
+        <button id="fullscreenBtn">Fullscreen</button>
+    </div>
+
+    <script>
+        const video = document.getElementById("zekePlayer");
+        document.getElementById("playBtn").addEventListener("click", () => video.play());
+        document.getElementById("pauseBtn").addEventListener("click", () => video.pause());
+        document.getElementById("muteBtn").addEventListener("click", () => {
+            video.muted = !video.muted;
+        });
+        document.getElementById("fullscreenBtn").addEventListener("click", () => {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            }
+        });
+    </script>
+
+</body>
+</html>
