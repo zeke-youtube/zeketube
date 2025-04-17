@@ -1,2 +1,2 @@
 # zeketube
-zeketube is a website that allow you to watch video like[youtube.com](youtube)
+zeketube is a website that allow you to watch video like[youtube](youtube.com)
