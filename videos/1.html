@@ -57,6 +57,12 @@
         document.getElementById("muteBtn").addEventListener("click", () => {
             video.muted = !video.muted;
         });
+        window.addEventListener("load", () => {
+            video.muted = false;
+            video.play().catch(error => {
+                console.log("Autoplay with sound was blocked, waiting for user interaction.");
+            });
+        });
         document.getElementById("fullscreenBtn").addEventListener("click", () => {
             if (video.requestFullscreen) {
                 video.requestFullscreen();
